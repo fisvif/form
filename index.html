@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="wrapper">
+    <main>
+      <h1>Форми</h1>
+      <div class="form_1">
+        <h2>01. проста форма</h2>
+        <form action="#" method="GET">
+          <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
+          <label><input type="email" maxlength="30" name="#" placeholder="Email"></label>
+          <label>
+            <select name="#" class="form_1-location">
+              <option selected disabled>Ваше місто</option>
+              <option>Пункт 1</option>
+              <option>Пункт 2</option>
+            </select>
+          </label>
+          <label><textarea name="#" id="#" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Email"></textarea></label>
+          <label><input type="submit" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label>
+        </form>
+      </div>
+      <hr>
+      <div class="form_2 clr">
+        <h2>02. елементи</h2>
+        <form action="#" method="GET" class=" form_2-radio left">
+          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="newpost"><label class="style-radio" for="newpost">Нова Пошта</label></p>
+          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="kyrer"><label class="style-radio" for="kyrer">Кур’єр</label></p>
+          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="samovuviz" disabled><label class="style-radio" for="samovuviz">Самовивіз</label></p>
+        </form>
+        <form action="#" method="GET" class="form_2-checkbox left">
+          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="reedymovdogovor"><label class="style-checkbox" for="reedymovdogovor">Прочитав умови договору</label></p>
+          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="agreepdv"><label class="style-checkbox" for="agreepdv">Згідний з ПДВ 9%</label></p>
+          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="takeemail" disabled><label class="style-checkbox" for="takeemail">Отримувати новини на ел. пошту</label></p>
+        </form>
+      </div>
+      <hr>
+      <div class="form_3">
+        <h2>03. стилізовані чекбокси </h2>
+        <form action="#" method="GET">
+          <p>
+            <input  type="checkbox" name"light" class="style-check" id="light">
+            <label for="light">turn on the the light</label>
+            <span class="background"></span>
+          </p>
+          <p><input  type="checkbox" name"night" class="style-check" id="night"><label for="night">goodbye</label></p>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
