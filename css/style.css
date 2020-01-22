@@ -64,8 +64,7 @@ h2{
 }
 .form_1 form input{
   width: 298px;
-  height: 38px;
-  padding: 0 15px;
+  padding: 10px 15px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -109,9 +108,14 @@ h2{
 .form_2-checkbox{
   margin-left: 25px;
 }
+.form_2-radio p:last-child label,
+.form_2-checkbox p:last-child label{
+  color: #b3b3b3;
+}
 .radio-check,
 .checkbox-check,
-.style-check{
+.style-check,
+.f3radio-check{
   visibility: hidden;
   position: absolute;
   z-index: -1;
@@ -136,10 +140,13 @@ h2{
   color: #1f222c;
   font-family: "Roboto";
 }
+.checkbox-check+label{
+  margin-right: 25px;
+}
 .style-check+label{
-  padding-left: 120px;
-  font-size: 40px;
-  color: #fff;
+  padding-left: 65px;
+  font-size: 14px;
+  color: #1f222c;
 }
 .style-check+label::before,
 .style-check+label::after{
@@ -154,7 +161,7 @@ h2{
   height: 15px;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #426dff;
+  border: 1px solid #cdcdcd;
 }
 .radio-check+label::after{
   width: 7px;
@@ -166,14 +173,16 @@ h2{
 .checkbox-check+label::before{
   width: 16px;
   height: 16px;
+  top: -2px;
   left: 0;
   border-radius: 3px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 .checkbox-check+label::after{
   width: 8.5px;
-  height: 9.5px;
-  top: 1px;
+  height: 5px;
+  top: 2px;
   left: 4px;
 }
 .checkbox-check:checked+label::after{
@@ -193,27 +202,46 @@ h2{
   border: 1px solid #426dff;
 }
 .style-check+label::before{
-  width: 100px;
-  height: 50px;
+  width: 45px;
+  height: 25px;
   left: 0;
-  background-color: gray;
+  background-color: #cfcfd1;
   border-radius: 25px;
 }
 .style-check+label::after{
-  width: 40px;
-  height: 40px;
-  top: 4px;
-  left: 5px;
-  background-color: lightgrey;
+  width: 21px;
+  height: 21px;
+  top: 2px;
+  left: 2px;
+  background-color: white;
   border-radius: 50%;
 }
 .style-check:checked+label::after{
-  background-color: blue;
-  left: 55px;
+  background-color: white;
+  left: 22px;
 }
 .style-check:checked+label::before{
-  background-color: yellow;
+  background-color: #12d661;
 }
+.form_2-rightdate{
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+}
+.form_2-rightdate fieldset{
+  display: inline-block;
+  border: 0;
+}
+.form_2-rightdate  p{
+  margin: 0;
+  line-height: 55px;
+}
+.date-inf{
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.form_2-rightdate
 .background{
   position: absolute;
   left: 0;
@@ -223,9 +251,48 @@ h2{
   z-index: -2;
   transition: background 3s ease;
 }
-.style-check:checked~.background{
-  background-color: #f8f8f8;
+.form_3-radio{
+  position: relative;
 }
-#light:checked+label{
-  color: black;
+.form_3-radio .men{
+  padding-left: 85px;
+}
+.men+label::before{
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -0px;
+  background-image: url(../images/men.png);
+}
+.women+label::before{
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/women.png);
+}
+.form_4 p{
+  font-size: 18px;
+  color: #1f222c;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.form4-table{
+  color: #1f222c;
+  font-family: "Roboto";
+}
+.form_4 .form4-table input,
+.form_4 .form4-table textarea{
+  width :308px;
+}
+.form_4 .form4-table select{
+  width :340px;
+}
+.form_4 .f4download{
+  border: 0;
+  width: 170px;
+  background-color: #3e6aff;
+  color: white;
+
 }

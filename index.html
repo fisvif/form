@@ -40,18 +40,182 @@
           <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="agreepdv"><label class="style-checkbox" for="agreepdv">Згідний з ПДВ 9%</label></p>
           <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="takeemail" disabled><label class="style-checkbox" for="takeemail">Отримувати новини на ел. пошту</label></p>
         </form>
+        <form action="#" method="GET" class="form_2-rightdate right">
+          <fieldset class="date-inf">
+            <p>Статус</p>
+            <p>Дата</p>
+          </fieldset>
+          <fieldset>
+            <p>
+              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="news"><label class="style-checkbox" for="news">Новинки</label>
+              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="akciunitovar"><label class="style-checkbox" for="akciunitovar">Акційні товари</label>
+              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="salle"><label class="style-checkbox" for="salle">Розпродаж</label>
+            </p>
+            <p>
+              <input type="date"><label for=""></label>
+            </p>
+          </fieldset>
+        </form>
       </div>
       <hr>
-      <div class="form_3">
+      <div class="form_3 clr">
         <h2>03. стилізовані чекбокси </h2>
-        <form action="#" method="GET">
-          <p>
-            <input  type="checkbox" name"light" class="style-check" id="light">
-            <label for="light">turn on the the light</label>
-            <span class="background"></span>
-          </p>
-          <p><input  type="checkbox" name"night" class="style-check" id="night"><label for="night">goodbye</label></p>
+        <form action="#"class="form_3-radio left">
+          <p><input type="radio" name="#" value="form_3-radio" class="f3radio-check men" id="menradio"><label class="style-radio" for="menradio">Чоловік</label></p>
+          <p><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label></p>
         </form>
+        <form action="#" method="GET" class=" form_3-checkbox right">
+          <p><input  type="checkbox" name"getnuws" class="style-check" id="getnuws"><label for="getnuws">Отримувати новини</label></p>
+          <p><input  type="checkbox" name"buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
+          <p><input  type="checkbox" name"turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
+        </form>
+      </div>
+      <hr>
+      <div class="form_4 form_1">
+        <h2>04. форма таблицею</h2>
+        <p>Заповніть усі необхідні поля</p>
+        <table class="form4-table">
+          <tr>
+            <td>ФІО:</td>
+            <td>
+              <form action="#">
+                <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Пароль:</td>
+            <td>
+              <form action="#">
+                <label><input type="text" maxlength="30" name="#" placeholder="Введіть не менше 6 символів"></label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Місто:</td>
+            <td>
+              <form action="#">
+                <label>
+                  <select name="#" class="form_1-location">
+                    <option selected disabled>Ваше місто</option>
+                    <option>Хмельницький</option>
+                    <option>Пункт 2</option>
+                  </select>
+                </label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Стать:</td>
+            <td>
+              <form action="#">
+                <input type="radio" name="#" value="form_2-radio" class="radio-check" id="menradio"><label class="style-radio" for="menradio">Чоловік</label>
+                <input type="radio" name="#" value="form_2-radio" class="radio-check" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Фото:</td>
+            <td>
+              <form action="#">
+                <label><input type="file" name="file" name="#" class="f4download"></label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Коментарій:</td>
+            <td>
+              <form action="#">
+                <label><textarea name="#" id="#" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Введіть текст повідомлення"></textarea></label>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp</td>
+            <td>
+              <form action="#">
+                <label><input type="submit" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <div class="form_5">
+        <h2>05. форма таблицею</h2>
+        <p>Оформлення заявки</p>
+        <table>
+          <tr>
+            <td>
+              <form action="#">
+                <p>Прізвище та ім’я</p>
+                <input type="text">
+              </form>
+            </td>
+            <td>
+              <form action="#">
+                <p>Ел. пошта</p>
+                <input type="text">
+              </form>
+            </td>
+            <td>
+              <form action="#">
+                <p>Телефон</p>
+                <input type="text">
+              </form>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <form action="#">
+                <p>Країна</p>
+                <input type="text">
+              </form>
+            </td>
+            <td colspan="2">
+              <form action="#">
+                <p>Адреса</p>
+                <input type="text">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <form action="#">
+                <p>Місто</p>
+                <input type="text">
+              </form>
+            </td>
+            <td>
+              <form action="#">
+                <p>Будинок</p>
+                <input type="text">
+              </form>
+            </td>
+            <td>
+              <form action="#">
+                <p>Поштовий індекс</p>
+                <input type="text">
+              </form>
+            </td>
+            <td>
+              <form action="#"><p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="iagry"><label class="style-checkbox" for="iagry">Я погоджуюсь з правилами оплати та доставки товару</label></p></form>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <form action="#"><label><input type="reset" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label></form>
+            </td>
+            <td>
+              <p>&nbsp</p>
+            </td>
+            <td>
+              <form action="#"><label><input type="submit" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label></form>
+            </td>
+          </tr>
+        </table>
       </div>
     </main>
   </div>
