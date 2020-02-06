@@ -19,8 +19,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 html{
   font-size: 14px;
 }
@@ -59,10 +57,16 @@ h2{
  font-family: "Roboto";
  font-weight: 700;
 }
+.form_1,
+.form_2,
+.form_3{
+  padding: 50px 0;
+}
 .form_1{
   width: 330px;
 }
-.form_1 form input{
+.form_1 form input,
+.form_4 form input{
   width: 298px;
   padding: 10px 15px;
   margin-bottom: 10px;
@@ -70,7 +74,8 @@ h2{
   border-radius: 3px;
   color: #b3b3b3;
 }
-.form_1-location{
+.form_1-location,
+.form-location{
   width: 330px;
   height: 40px;
   padding: 0 15px;
@@ -221,7 +226,7 @@ h2{
   left: 22px;
 }
 .style-check:checked+label::before{
-  background-color: #12d661;
+  background-color: #3e6aff;
 }
 .form_2-rightdate{
   border: 1px solid #e5e5e5;
@@ -254,15 +259,20 @@ h2{
 .form_3-radio{
   position: relative;
 }
-.form_3-radio .men{
+.pmen{
+  margin-bottom: 70px;
+}
+.f3radio-check+label{
   padding-left: 85px;
+  font-weight: bold;
 }
 .men+label::before{
   content: "";
   position: absolute;
   width: 70px;
   height: 70px;
-  left: -0px;
+  left: 0;
+  top: -15px;
   background-image: url(../images/men.png);
 }
 .women+label::before{
@@ -270,7 +280,15 @@ h2{
   position: absolute;
   width: 70px;
   height: 70px;
+  left: 0;
+  top: 70px;
   background-image: url(../images/women.png);
+}
+.men:checked+label::before{
+    background-image: url(../images/men_color.png);
+}
+.women:checked+label::before{
+  background-image: url(../images/women_color.png);
 }
 .form_4 p{
   font-size: 18px;
@@ -278,21 +296,34 @@ h2{
   font-family: "Roboto";
   font-weight: 700;
 }
-.form4-table{
-  color: #1f222c;
-  font-family: "Roboto";
+.f4table{
+  width: 515px;
 }
-.form_4 .form4-table input,
-.form_4 .form4-table textarea{
-  width :308px;
+.f4table tr{
+  margin-bottom: 15px;
 }
-.form_4 .form4-table select{
-  width :340px;
+.f4table td:nth-child(2n+1) {
+  padding: 15px 0 25px;
+  width: 165px;
 }
-.form_4 .f4download{
+.form_4 .f4table input{
+  padding: 12px;
+  width :92.3%;
+}
+.f4men+label{
+  margin-right: 20px;
+}
+.form_4 .f4table textarea{
+  width :315px;
+}
+.form_4 .f4table select{
+  width :345px;
+  padding: 13px;
+}
+.form_4  .f4download{
   border: 0;
-  width: 170px;
-  background-color: #3e6aff;
-  color: white;
-
+}
+.form_4 .f4table .f4submit{
+  width: 100%;
+  margin: 0;
 }
