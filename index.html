@@ -119,7 +119,7 @@
               <td>Фото:</td>
               <td>
                 <form action="#">
-                  <label><input type="file" name="file" name="#" class="f4download"></label>
+                  <input type="file" name="file" class="f4download" id="download"><label for="download"></label>
                 </form>
               </td>
             </tr>
@@ -146,78 +146,37 @@
       <div class="form_5">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
-        <table>
+        <table class="f5table_1">
           <tr>
-            <td>
-              <form action="#">
-                <p>Прізвище та ім’я</p>
-                <input type="text">
-              </form>
-            </td>
-            <td>
-              <form action="#">
-                <p>Ел. пошта</p>
-                <input type="text">
-              </form>
-            </td>
-            <td>
-              <form action="#">
-                <p>Телефон</p>
-                <input type="text">
-              </form>
-            </td>
+            <td><form action="post"><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></form></td>
+            <td><form action="post"><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></form></td>
+            <td><form action="post"><input type="text" id="f5number"><label for="f5number">Телефон</label></form></td>
           </tr>
         </table>
-        <table>
+        <hr>
+        <table class="f5table_2">
           <tr>
             <td>
-              <form action="#">
-                <p>Країна</p>
-                <input type="text">
+              <form action="post">
+                <select name="#" class="form_5-location" id="f5cantry">
+                  <option selected disabled></option>
+                  <option>Індонезія</option>
+                  <option>Індонезія2</option>
+                </select>
+                <label for="f5cantry">Країна</label></td>
               </form>
-            </td>
-            <td colspan="2">
-              <form action="#">
-                <p>Адреса</p>
-                <input type="text">
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <form action="#">
-                <p>Місто</p>
-                <input type="text">
-              </form>
-            </td>
-            <td>
-              <form action="#">
-                <p>Будинок</p>
-                <input type="text">
-              </form>
-            </td>
-            <td>
-              <form action="#">
-                <p>Поштовий індекс</p>
-                <input type="text">
-              </form>
-            </td>
-            <td>
-              <form action="#"><p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="iagry"><label class="style-checkbox" for="iagry">Я погоджуюсь з правилами оплати та доставки товару</label></p></form>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <form action="#"><label><input type="reset" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label></form>
-            </td>
-            <td>
-              <p>&nbsp</p>
-            </td>
-            <td>
-              <form action="#"><label><input type="submit" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label></form>
-            </td>
+            <td colspan="2"><form action="post"><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></form></td>
           </tr>
         </table>
+        <table class="f5table_3">
+          <tr>
+            <td><form action="post"><input type="text" id="f5sity"><label for="f5sity">Місто</label></form></td>
+            <td><form action="post"><input type="text" id="f5house"><label for="f5house">Будинок</label></form></td>
+            <td><form action="post"><input type="text" id="f5postind"><label for="f5postind">Поштовий індекс</label></form></td>
+          </tr>
+        </table>
+        <div><form><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></form></div>
+        <hr>
       </div>
     </main>
   </div>

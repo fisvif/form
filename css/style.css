@@ -68,7 +68,7 @@ h2{
 .form_1 form input,
 .form_4 form input{
   width: 298px;
-  padding: 10px 15px;
+  padding: 13px 15px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -320,10 +320,54 @@ h2{
   width :345px;
   padding: 13px;
 }
-.form_4  .f4download{
-  border: 0;
-}
 .form_4 .f4table .f4submit{
-  width: 100%;
+  width: 348px;
   margin: 0;
+}
+.form_5>p{
+  font-size: 18px;
+  color: #1f222c;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.f5table_1{
+  margin: 40px 0 30px;
+}
+.f5table_2{
+  margin: 45px 0 18px;
+}
+.f5table_3{
+  margin: 20px 0 25px;
+}
+.form_5 td{
+  padding-right: 10px;
+}
+.form_5 input,
+.form_5 select{
+  position: relative;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #1f222c;
+  font-family: "Roboto";
+  font-weight: 400;
+  width: 218px;
+}
+.form_5 select{
+  width: 246px;
+}
+.form_5 label{
+  position: absolute;
+  font-size: 13px;
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.form_5 .f5adres{
+  width: 477px;
+}
+.form_5 .f5stule-chec{
+  font-size: 14px;
+  color: #1f222c;
 }
