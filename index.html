@@ -74,28 +74,24 @@
       <div class="form_4  form_1">
         <h2>04. форма таблицею</h2>
         <p>Заповніть усі необхідні поля</p>
-        <table class="f4table">
-          <tbody>
-            <tr>
-              <td>ФІО:</td>
-              <td>
-                <form action="#">
+        <form>
+          <table class="f4table">
+            <tbody>
+              <tr>
+                <td>ФІО:</td>
+                <td>
                   <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Пароль:</td>
-              <td>
-                <form action="#">
-                  <label><input type="text" maxlength="30" name="#" placeholder="Введіть не менше 6 символів"></label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Місто:</td>
-              <td>
-                <form action="#">
+                </td>
+              </tr>
+              <tr>
+                <td>Пароль:</td>
+                <td>
+                    <label><input type="text" maxlength="30" name="#" placeholder="Введіть не менше 6 символів"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Місто:</td>
+                <td>
                   <label>
                     <select name="#" class="form_1-location">
                       <option selected disabled>Ваше місто</option>
@@ -103,80 +99,76 @@
                       <option>Пункт 2</option>
                     </select>
                   </label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Стать:</td>
-              <td>
-                <form action="#">
+                </td>
+              </tr>
+              <tr>
+                <td>Стать:</td>
+                <td>
                   <input type="radio" name="radio" value="form_2-radio" class="radio-check f4men" id="men"><label class="style-radio" for="men">Чоловік</label>
                   <input type="radio" name="radio" value="form_2-radio" class="radio-check" id="women"><label class="style-radio" for="women">Жінка</label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Фото:</td>
-              <td>
-                <form action="#">
-                  <input type="file" name="file" class="f4download" id="download"><label for="download"></label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Коментарій:</td>
-              <td>
-                <form action="#">
+                </td>
+              </tr>
+              <tr>
+                <td>Фото:</td>
+                <td class="suport">
+                  <input type="file" name="file" class="f4download" id="dow"><label for="dow">Виберіть файл</label>
+                </td>
+              </tr>
+              <tr>
+                <td>Коментарій:</td>
+                <td>
                   <label><textarea name="#" id="#" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Введіть текст повідомлення"></textarea></label>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>&nbsp</td>
-              <td>
-                <form action="#">
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp</td>
+                <td>
                   <label><input type="submit" name="submit" class="form_1-submit f4submit" placeholder="Зареєструватися"></label>
-                </form>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </div>
       <hr>
       <div class="form_5">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
-        <table class="f5table_1">
-          <tr>
-            <td><form action="post"><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></form></td>
-            <td><form action="post"><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></form></td>
-            <td><form action="post"><input type="text" id="f5number"><label for="f5number">Телефон</label></form></td>
-          </tr>
-        </table>
-        <hr>
-        <table class="f5table_2">
-          <tr>
-            <td>
-              <form action="post">
-                <select name="#" class="form_5-location" id="f5cantry">
-                  <option selected disabled></option>
-                  <option>Індонезія</option>
-                  <option>Індонезія2</option>
-                </select>
-                <label for="f5cantry">Країна</label></td>
-              </form>
-            <td colspan="2"><form action="post"><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></form></td>
-          </tr>
-        </table>
-        <table class="f5table_3">
-          <tr>
-            <td><form action="post"><input type="text" id="f5sity"><label for="f5sity">Місто</label></form></td>
-            <td><form action="post"><input type="text" id="f5house"><label for="f5house">Будинок</label></form></td>
-            <td><form action="post"><input type="text" id="f5postind"><label for="f5postind">Поштовий індекс</label></form></td>
-          </tr>
-        </table>
-        <div><form><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></form></div>
-        <hr>
+        <form action="post">
+          <table class="f5table_1">
+            <tr>
+              <td><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
+              <td><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></td>
+              <td><input type="text" id="f5number"><label for="f5number">Телефон</label></td>
+            </tr>
+          </table>
+          <hr>
+          <table class="f5table_2">
+            <tr>
+              <td>
+                  <select name="#" class="form_5-location" id="f5cantry">
+                    <option selected disabled></option>
+                    <option>Індонезія</option>
+                    <option>Індонезія2</option>
+                  </select>
+                  <label for="f5cantry">Країна</label></td>
+              <td colspan="2"><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
+            </tr>
+          </table>
+          <table class="f5table_3">
+            <tr>
+              <td><input type="text" id="f5sity"><label for="f5sity">Місто</label></td>
+              <td><input type="text" id="f5house"><label for="f5house">Будинок</label></td>
+              <td><input type="text" id="f5postind"><label for="f5postind">Поштовий індекс</label></td>
+            </tr>
+          </table>
+          <div><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></div>
+          <hr>
+          <div>
+            <a href="#">Повернутися назад</a>
+            <label><input type="submit" name="submit" class="form_5-submit" placeholder="Оформити покупку"></label>
+          </div>
+        </form>
       </div>
     </main>
   </div>

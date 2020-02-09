@@ -320,6 +320,24 @@ h2{
   width :345px;
   padding: 13px;
 }
+.suport,
+.form_5 td{
+  position: relative;
+}
+.f4download{
+  visibility: hidden;
+}
+.f4download+label{
+  position: absolute;
+  padding: 15px 37px;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  background: #3e6aff;
+}
 .form_4 .f4table .f4submit{
   width: 348px;
   margin: 0;
@@ -334,7 +352,7 @@ h2{
   margin: 40px 0 30px;
 }
 .f5table_2{
-  margin: 45px 0 18px;
+  margin: 45px 0 20px;
 }
 .f5table_3{
   margin: 20px 0 25px;
@@ -344,7 +362,6 @@ h2{
 }
 .form_5 input,
 .form_5 select{
-  position: relative;
   padding: 13px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -363,6 +380,8 @@ h2{
   color: #b3b3b3;
   font-family: "Roboto";
   font-weight: 400;
+  left: 0;
+  top: -20px;
 }
 .form_5 .f5adres{
   width: 477px;
