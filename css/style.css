@@ -256,9 +256,6 @@ h2{
   z-index: -2;
   transition: background 3s ease;
 }
-.form_3-radio{
-  position: relative;
-}
 .pmen{
   margin-bottom: 70px;
 }
@@ -320,8 +317,10 @@ h2{
   width :345px;
   padding: 13px;
 }
+.form_3-radio,
 .suport,
-.form_5 td{
+.form_5 td,
+.form_5 .form_5-submitlab{
   position: relative;
 }
 .f4download{
@@ -389,4 +388,20 @@ h2{
 .form_5 .f5stule-chec{
   font-size: 14px;
   color: #1f222c;
+}
+.f5div{
+  width: 768px;
+}
+.getback{
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #6e6f77;
+  font-family: "Roboto";
+  font-weight: 700;
+  border: 1px solid #84868d;
+  border-radius: 3px;
+}
+.form_5-submit{
+  width: 180px;
 }

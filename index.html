@@ -15,7 +15,7 @@
         <h2>01. проста форма</h2>
         <form action="#" method="GET">
           <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
-          <label><input type="email" maxlength="30" name="#" placeholder="Email"></label>
+          <label><input type="mail" maxlength="30" name="mail" placeholder="Email"></label>
           <label>
             <select name="#" class="form_1-location">
               <option selected disabled>Ваше місто</option>
@@ -23,8 +23,8 @@
               <option>Пункт 2</option>
             </select>
           </label>
-          <label><textarea name="#" id="#" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Email"></textarea></label>
-          <label><input type="submit" name="submit" class="form_1-submit" placeholder="Зареєструватися"></label>
+          <label><textarea name="form_1-textarea" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Email"></textarea></label>
+          <label><input type="submit" name="submit" class="form_1-submit" value="Зареєструватися"></label>
         </form>
       </div>
       <hr>
@@ -123,7 +123,7 @@
               <tr>
                 <td>&nbsp</td>
                 <td>
-                  <label><input type="submit" name="submit" class="form_1-submit f4submit" placeholder="Зареєструватися"></label>
+                  <label><input type="submit" name="submit" class="form_1-submit f4submit" value="Зареєструватися"></label>
                 </td>
               </tr>
             </tbody>
@@ -134,11 +134,11 @@
       <div class="form_5">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
-        <form action="post">
+        <form action="get">
           <table class="f5table_1">
             <tr>
               <td><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
-              <td><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></td>
+              <td><input type="mail" id="f5email"><label for="f5email">Ел. пошта</label></td>
               <td><input type="text" id="f5number"><label for="f5number">Телефон</label></td>
             </tr>
           </table>
@@ -163,10 +163,9 @@
             </tr>
           </table>
           <div><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></div>
-          <hr>
-          <div>
-            <a href="#">Повернутися назад</a>
-            <label><input type="submit" name="submit" class="form_5-submit" placeholder="Оформити покупку"></label>
+          <div class="suport f5div">
+            <a href="#" class="getback left">Повернутися назад</a>
+            <label class="form_5-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit right" value="Оформити покупку"></label>
           </div>
         </form>
       </div>
