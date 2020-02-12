@@ -389,6 +389,9 @@ h2{
   font-size: 14px;
   color: #1f222c;
 }
+.f5p{
+  width: 100%;
+}
 .f5div{
   width: 768px;
 }
@@ -402,6 +405,10 @@ h2{
   border: 1px solid #84868d;
   border-radius: 3px;
 }
-.form_5-submit{
+.form_5 .form_5-submit{
   width: 180px;
+  background-color: #12d661;
+  border: 0;
+  height: 40px;
+  color: #fff;
 }
