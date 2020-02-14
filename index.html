@@ -15,7 +15,7 @@
         <h2>01. проста форма</h2>
         <form action="#" method="GET">
           <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
-          <label><input type="mail" maxlength="30" name="mail" placeholder="Email"></label>
+          <label><input type="email" maxlength="30" name="mail" placeholder="Email"></label>
           <label>
             <select name="#" class="form_1-location">
               <option selected disabled>Ваше місто</option>
@@ -60,14 +60,14 @@
       <hr>
       <div class="form_3 clr">
         <h2>03. стилізовані чекбокси </h2>
-        <form action="#"class="form_3-radio left">
+        <form action="#" class="form_3-radio left">
           <p class="pmen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check men" id="menradio"><label class="style-radio" for="menradio">Чоловік</label></p>
           <p class="pwomen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label></p>
         </form>
         <form action="#" method="GET" class=" form_3-checkbox right">
-          <p><input  type="checkbox" name"getnuws" class="style-check" id="getnuws"><label for="getnuws">Отримувати новини</label></p>
-          <p><input  type="checkbox" name"buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
-          <p><input  type="checkbox" name"turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
+          <p><input  type="checkbox" name="getnews" class="style-check" id="getnews"><label for="getnews">Отримувати новини</label></p>
+          <p><input  type="checkbox" name="buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
+          <p><input  type="checkbox" name="turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
         </form>
       </div>
       <hr>
@@ -121,7 +121,7 @@
                 </td>
               </tr>
               <tr>
-                <td>&nbsp</td>
+                <td>&nbsp;</td>
                 <td>
                   <label><input type="submit" name="submit" class="form_1-submit f4submit" value="Зареєструватися"></label>
                 </td>
@@ -138,7 +138,7 @@
           <table class="f5table_1">
             <tr>
               <td><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
-              <td><input type="mail" id="f5email"><label for="f5email">Ел. пошта</label></td>
+              <td><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></td>
               <td><input type="text" id="f5number"><label for="f5number">Телефон</label></td>
             </tr>
           </table>
@@ -147,12 +147,12 @@
             <tr>
               <td>
                   <select name="#" class="form_5-location" id="f5cantry">
-                    <option selected disabled></option>
+                    <option selected disabled>&nbsp;</option>
                     <option>Індонезія</option>
                     <option>Індонезія2</option>
                   </select>
                   <label for="f5cantry">Країна</label></td>
-              <td colspan="2"><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
+              <td><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
             </tr>
           </table>
           <table class="f5table_3">
@@ -175,8 +175,8 @@
         <h2>06. фіксована форма</h2>
         <form action="post">
           <fieldset>
-            <p><input type="text" maxlength="30" name="#"><label for="">Логін</label></p>
-            <p><input type="mail" maxlength="30" name="mail"><label>Пароль</label></p>
+            <p><input type="text" maxlength="30" name="#" id="login"><label for="login">Логін</label></p>
+            <p><input type="email" maxlength="30" name="mail" id="password"><label for="password">Пароль</label></p>
             <a href="#">Забули пароль?</a>
             <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f6rem"><label class="style-checkbox f5stule-chec" for="f6rem">Запам’ятати пароль</label>
             <label class="form_5-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit right" value="Оформити покупку"></label>
