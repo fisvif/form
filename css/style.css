@@ -24,6 +24,7 @@ html{
 }
 body{
   margin: 0;
+  overflow-x: hidden;
 }
 .wrapper{
   width: 990px;
@@ -324,6 +325,7 @@ h2{
 .form_5 td,
 .form_5 .form_5-submitlab{
   position: relative;
+  top: 0;
 }
 .f4download{
   visibility: hidden;
@@ -362,7 +364,8 @@ h2{
   padding-right: 10px;
 }
 .form_5 input,
-.form_5 select{
+.form_5 select,
+.form_6 input{
   padding: 13px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -420,4 +423,42 @@ h2{
 }
 .form_6{
   width: 310px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.form_6 p{
+  display: inline-block;
+}
+.form_6 fieldset{
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 20px 25px;
+}
+.form_6 input{
+  width: 258px;
+  padding: 11px 10px;
+  margin: 20px 0 0;
+}
+.form_6 label{
+  font-size: 13px;
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.f6absol{
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+.form_6 a{
+  color: #3e6aff;
+  text-decoration: none;
+}
+ .form_6 .f6checkb{
+  margin: 12px 0;
+}
+.form_6>.form_5-submit{
+  margin: 0;
 }

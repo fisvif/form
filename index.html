@@ -13,87 +13,91 @@
       <h1>Форми</h1>
       <div class="form_1">
         <h2>01. проста форма</h2>
-        <form action="#" method="GET">
+        <form action="send.php" method="post">
           <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
           <label><input type="email" maxlength="30" name="mail" placeholder="Email"></label>
           <label>
-            <select name="#" class="form_1-location">
+            <select name="f1location" class="form_1-location">
               <option selected disabled>Ваше місто</option>
-              <option>Пункт 1</option>
-              <option>Пункт 2</option>
+              <option value="1">Пункт 1</option>
+              <option value="2">Пункт 2</option>
             </select>
           </label>
-          <label><textarea name="form_1-textarea" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Email"></textarea></label>
+          <label><textarea name="form_1-textarea" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Повідомлення"></textarea></label>
           <label><input type="submit" name="submit" class="form_1-submit" value="Зареєструватися"></label>
         </form>
       </div>
       <hr>
       <div class="form_2 clr">
         <h2>02. елементи</h2>
-        <form action="#" method="GET" class=" form_2-radio left">
-          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="newpost"><label class="style-radio" for="newpost">Нова Пошта</label></p>
-          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="kyrer"><label class="style-radio" for="kyrer">Кур’єр</label></p>
-          <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="samovuviz" disabled><label class="style-radio" for="samovuviz">Самовивіз</label></p>
-        </form>
-        <form action="#" method="GET" class="form_2-checkbox left">
-          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="reedymovdogovor"><label class="style-checkbox" for="reedymovdogovor">Прочитав умови договору</label></p>
-          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="agreepdv"><label class="style-checkbox" for="agreepdv">Згідний з ПДВ 9%</label></p>
-          <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="takeemail" disabled><label class="style-checkbox" for="takeemail">Отримувати новини на ел. пошту</label></p>
-        </form>
-        <form action="#" method="GET" class="form_2-rightdate right">
-          <fieldset class="date-inf">
-            <p>Статус</p>
-            <p>Дата</p>
-          </fieldset>
-          <fieldset>
-            <p>
-              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="news"><label class="style-checkbox" for="news">Новинки</label>
-              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="akciunitovar"><label class="style-checkbox" for="akciunitovar">Акційні товари</label>
-              <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="salle"><label class="style-checkbox" for="salle">Розпродаж</label>
-            </p>
-            <p>
-              <input type="date"><label for="#"></label>
-            </p>
-          </fieldset>
+        <form action="send.php" method="get">
+          <div class="form_2-radio left">
+            <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="newpost"><label class="style-radio" for="newpost">Нова Пошта</label></p>
+            <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="kyrer"><label class="style-radio" for="kyrer">Кур’єр</label></p>
+            <p><input type="radio" name="#" value="form_2-radio" class="radio-check" id="samovuviz" disabled><label class="style-radio" for="samovuviz">Самовивіз</label></p>
+          </div>
+          <div class="form_2-checkbox left">
+            <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="reedymovdogovor"><label class="style-checkbox" for="reedymovdogovor">Прочитав умови договору</label></p>
+            <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="agreepdv"><label class="style-checkbox" for="agreepdv">Згідний з ПДВ 9%</label></p>
+            <p><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="takeemail" disabled><label class="style-checkbox" for="takeemail">Отримувати новини на ел. пошту</label></p>
+          </div>
+          <div class="form_2-rightdate right">
+            <fieldset class="date-inf">
+              <p>Статус</p>
+              <p>Дата</p>
+            </fieldset>
+            <fieldset>
+              <p>
+                <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="news"><label class="style-checkbox" for="news">Новинки</label>
+                <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="akciunitovar"><label class="style-checkbox" for="akciunitovar">Акційні товари</label>
+                <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="salle"><label class="style-checkbox" for="salle">Розпродаж</label>
+              </p>
+              <p>
+                <input type="date"><label></label>
+              </p>
+            </fieldset>
+          </div>
         </form>
       </div>
       <hr>
       <div class="form_3 clr">
-        <h2>03. стилізовані чекбокси </h2>
-        <form action="#" class="form_3-radio left">
-          <p class="pmen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check men" id="menradio"><label class="style-radio" for="menradio">Чоловік</label></p>
-          <p class="pwomen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label></p>
-        </form>
-        <form action="#" method="GET" class=" form_3-checkbox right">
-          <p><input  type="checkbox" name="getnews" class="style-check" id="getnews"><label for="getnews">Отримувати новини</label></p>
-          <p><input  type="checkbox" name="buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
-          <p><input  type="checkbox" name="turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
+        <h2>03. стилізовані чекбокси</h2>
+        <form action="send.php" method="get">
+          <div class="form_3-radio left">
+            <p class="pmen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check men" id="menradio"><label class="style-radio" for="menradio">Чоловік</label></p>
+            <p class="pwomen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label></p>
+          </div>
+          <div action="send.php" method="GET" class=" form_3-checkbox right">
+            <p><input  type="checkbox" name="getnews" class="style-check" id="getnews"><label for="getnews">Отримувати новини</label></p>
+            <p><input  type="checkbox" name="buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
+            <p><input  type="checkbox" name="turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
+          </div>
         </form>
       </div>
       <hr>
       <div class="form_4  form_1">
         <h2>04. форма таблицею</h2>
         <p>Заповніть усі необхідні поля</p>
-        <form>
+        <form action="send.php" method="post">
           <table class="f4table">
             <tbody>
               <tr>
-                <td>ФІО:</td>
+                <td><label for="f4name">ФІО:</label></td>
                 <td>
-                  <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
+                  <input type="text" maxlength="30" name="vaditname" id="f4name" placeholder="Введіть ім’я">
                 </td>
               </tr>
               <tr>
-                <td>Пароль:</td>
+                <td><label for="f4enter">Пароль:</label></td>
                 <td>
-                    <label><input type="text" maxlength="30" name="#" placeholder="Введіть не менше 6 символів"></label>
+                    <input type="text" maxlength="30" name="enter6simvol" id="f4enter" placeholder="Введіть не менше 6 символів">
                 </td>
               </tr>
               <tr>
-                <td>Місто:</td>
+                <td><label for="f4location">Місто:</label></td>
                 <td>
                   <label>
-                    <select name="#" class="form_1-location">
+                    <select name="f4yourloc" id="f4location" class="form_1-location">
                       <option selected disabled>Ваше місто</option>
                       <option>Хмельницький</option>
                       <option>Пункт 2</option>
@@ -109,15 +113,15 @@
                 </td>
               </tr>
               <tr>
-                <td>Фото:</td>
+                <td><label for="dow">Фото:</label></td>
                 <td class="suport">
                   <input type="file" name="file" class="f4download" id="dow"><label for="dow">Виберіть файл</label>
                 </td>
               </tr>
               <tr>
-                <td>Коментарій:</td>
+                <td><label for="f4are">Коментарій:</label></td>
                 <td>
-                  <label><textarea name="#" id="#" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Введіть текст повідомлення"></textarea></label>
+                  <textarea name="textarea" id="f4are" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Введіть текст повідомлення"></textarea>
                 </td>
               </tr>
               <tr>
@@ -134,7 +138,7 @@
       <div class="form_5">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
-        <form action="get">
+        <form action="send.php" method="post">
           <table class="f5table_1">
             <tr>
               <td><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
@@ -169,17 +173,16 @@
             <label class="form_5-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit right" value="Оформити покупку"></label>
           </div>
         </form>
-      </div
-      >
+      </div>
       <div class="form_6">
         <h2>06. фіксована форма</h2>
-        <form action="post">
+        <form action="send.php">
           <fieldset>
-            <p><input type="text" maxlength="30" name="#" id="login"><label for="login">Логін</label></p>
-            <p><input type="email" maxlength="30" name="mail" id="password"><label for="password">Пароль</label></p>
-            <a href="#">Забули пароль?</a>
-            <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f6rem"><label class="style-checkbox f5stule-chec" for="f6rem">Запам’ятати пароль</label>
-            <label class="form_5-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit right" value="Оформити покупку"></label>
+            <p class="suport"><input type="text" maxlength="30" name="#" id="login" ><label for="login" class="f6absol">Логін</label></p>
+            <p class="suport"><input type="email" maxlength="30" name="mail" id="password"><label for="password" class="f6absol">Пароль</label></p>
+            <p><a href="#">Забули пароль?</a></p>
+            <p class="f6checkb"><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f6rem"><label class="style-checkbox f5stule-chec" for="f6rem">Запам’ятати пароль</label></p>
+            <label class="form_5-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit" value="Оформити покупку"></label>
           </fieldset>
         </form>
       </div>
