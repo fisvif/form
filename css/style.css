@@ -1,26 +1,38 @@
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('RobotoSlab-Regular.eot');
-    src: url('RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
-        url('RobotoSlab-Regular.woff2') format('woff2'),
-        url('RobotoSlab-Regular.woff') format('woff'),
-        url('RobotoSlab-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.eot');
-    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff'),
-        url('Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
 html{
   font-size: 14px;
+  font-family: "Roboto";
 }
 body{
   margin: 0;
@@ -55,11 +67,12 @@ h1{
   text-align: center;
 }
 h2{
- font-size: 20px;
- letter-spacing: 0px;
- color: #b3b3b3;
- font-family: "Roboto";
- font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: #b3b3b3;
+  font-family: "Roboto";
+  font-weight: 700;
 }
 .form_1,
 .form_2,
@@ -101,11 +114,13 @@ h2{
 
 }
 .form_1 form .form_1-submit{
-  background-color: #12d661;
-  border: 0;
+  font-family: "Roboto";
+  font-weight: bold;
   height: 40px;
   width: 330px;
   color: #fff;
+  background-color: #12d661;
+  border: 0;
 }
 .form_2 input{
   display: inline-block;
@@ -290,7 +305,8 @@ h2{
 .women:checked+label::before{
   background-image: url(../images/women_color.png);
 }
-.form_4 p{
+.form_4 p,
+.form_5>p{
   font-size: 18px;
   color: #1f222c;
   font-family: "Roboto";
@@ -345,12 +361,6 @@ h2{
   width: 348px;
   margin: 0;
 }
-.form_5>p{
-  font-size: 18px;
-  color: #1f222c;
-  font-family: "Roboto";
-  font-weight: 700;
-}
 .f5table_1{
   margin: 40px 0 30px;
 }
@@ -383,7 +393,6 @@ h2{
   font-size: 13px;
   color: #b3b3b3;
   font-family: "Roboto";
-  font-weight: 400;
   left: 0;
   top: -20px;
 }
@@ -416,28 +425,28 @@ h2{
 .form_5 .form_5-submit{
   width: 180px;
   padding: 15px 0;
-  top: 0;
   color: #fff;
   background-color: #12d661;
   border: 0;
 }
 .form_6{
-  width: 310px;
   position: fixed;
-  left: 0;
-  top: 0;
-}
-.form_6 p{
-  display: inline-block;
+  width: 310px;
+  right: calc(50% - 492px);
+  top: 175px;
 }
 .form_6 fieldset{
+  max-width: 260px;
+  max-height: 270px;
+  height: 100%;
+  padding: 10px 25px;
   background: #fafafa;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  padding: 20px 25px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.15));
 }
 .form_6 input{
-  width: 258px;
+  width: 238px;
   padding: 11px 10px;
   margin: 20px 0 0;
 }
@@ -452,6 +461,7 @@ h2{
   left: 2px;
   top: 0;
 }
+
 .form_6 a{
   color: #3e6aff;
   text-decoration: none;
@@ -459,6 +469,9 @@ h2{
  .form_6 .f6checkb{
   margin: 12px 0;
 }
-.form_6>.form_5-submit{
+.form_6 .f6sub{
   margin: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #12d661;
 }
