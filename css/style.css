@@ -67,6 +67,7 @@ h1{
   text-align: center;
 }
 h2{
+  margin: 0 0 30px;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0px;
@@ -91,15 +92,29 @@ h2{
   border-radius: 3px;
   color: #b3b3b3;
 }
-.form_1-location,
-.form-location{
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+.form_1-location{
   width: 330px;
   padding: 13px 15px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   color: #1f222c;
-  -webkit-appearance: none;
+}
+.wrapper .f1p{
+  margin: 0;
+}
+.form_1-location+label{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 4.5px solid #1f222c;
+  border-top-color:  transparent;
+  border-left-color:  transparent;
+  transform: rotate(45deg);
 }
 .form_1-textarea{
   padding: 15px;
@@ -121,6 +136,10 @@ h2{
   color: #fff;
   background-color: #12d661;
   border: 0;
+}
+.form_1-submit:hover{
+  filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+  background-color: #07be51;
 }
 .form_2 input{
   display: inline-block;
@@ -305,6 +324,12 @@ h2{
 .women:checked+label::before{
   background-image: url(../images/women_color.png);
 }
+.form_3{
+  width: 680px;
+}
+.form_3-checkbox p{
+  margin: 20px 0;
+}
 .form_4 p,
 .form_5>p{
   font-size: 18px;
@@ -361,6 +386,9 @@ h2{
   width: 348px;
   margin: 0;
 }
+.form_5{
+  padding: 50px 0;
+}
 .f5table_1{
   margin: 40px 0 30px;
 }
@@ -384,9 +412,27 @@ h2{
   font-family: "Roboto";
   font-weight: 400;
   width: 218px;
+
 }
 .form_5 select{
   width: 246px;
+}
+.form_5s-location{
+  position: absolute;
+  top: 16px;
+  right: 25px;
+  border: 4.5px solid #1f222c;
+  border-top-color:  transparent;
+  border-left-color:  transparent;
+  transform: rotate(45deg);
+}
+.form_5sp-location{
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 29%;
+  right: 45px;
+  border-right: 1px solid #ccc;
 }
 .form_5 label{
   position: absolute;
@@ -432,8 +478,8 @@ h2{
 .form_6{
   position: fixed;
   width: 310px;
-  right: calc(50% - 492px);
-  top: 175px;
+  right: calc(50% - 491px);
+  top: 203px;
 }
 .form_6 fieldset{
   max-width: 260px;

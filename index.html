@@ -16,13 +16,15 @@
         <form action="send.php" method="post">
           <label><input type="text" maxlength="30" name="#" placeholder="Введіть ім’я"></label>
           <label><input type="email" maxlength="30" name="mail" placeholder="Email"></label>
-          <label>
-            <select name="f1location" class="form_1-location">
+          <p class="suport f1p">
+            <select name="f1location" class="form_1-location" id="f1sel">
               <option selected disabled>Ваше місто</option>
-              <option value="1">Пункт 1</option>
-              <option value="2">Пункт 2</option>
+              <option value="1">Київ</option>
+              <option value="2">Львів</option>
+              <option value="3">Хмельницький</option>
             </select>
-          </label>
+            <label for="f1sel"></label>
+          </p>
           <label><textarea name="form_1-textarea" cols="30" rows="10" maxlength="150" class="form_1-textarea" placeholder="Повідомлення"></textarea></label>
           <label><input type="submit" name="submit" class="form_1-submit" value="Зареєструватися"></label>
         </form>
@@ -70,7 +72,7 @@
           <div action="send.php" method="GET" class=" form_3-checkbox right">
             <p><input  type="checkbox" name="getnews" class="style-check" id="getnews"><label for="getnews">Отримувати новини</label></p>
             <p><input  type="checkbox" name="buyhomemeat" class="style-check" id="buyhomemeat"><label for="buyhomemeat">Купити додому ковбаси</label></p>
-            <p><input  type="checkbox" name="turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
+            <p class="f1p"><input  type="checkbox" name="turnonlight" class="style-check" id="turnonlight"><label for="turnonlight">Включити світло</label></p>
           </div>
         </form>
       </div>
@@ -90,7 +92,7 @@
               <tr>
                 <td><label for="f4enter">Пароль:</label></td>
                 <td>
-                    <input type="text" maxlength="30" name="enter6simvol" id="f4enter" placeholder="Введіть не менше 6 символів">
+                    <input type="password" maxlength="30" name="enter6simvol" id="f4enter" placeholder="Введіть не менше 6 символів">
                 </td>
               </tr>
               <tr>
@@ -149,12 +151,14 @@
           <hr>
           <table class="f5table_2">
             <tr>
-              <td>
+              <td class="suport">
                   <select name="#" class="form_5-location" id="f5cantry">
                     <option selected disabled>&nbsp;</option>
                     <option>Індонезія</option>
                     <option>Індонезія2</option>
                   </select>
+                  <span class="form_5sp-location"></span>
+                  <span class="form_5s-location"></span>
                   <label for="f5cantry">Країна</label></td>
               <td><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
             </tr>
@@ -166,7 +170,7 @@
               <td><input type="text" id="f5postind"><label for="f5postind">Поштовий індекс</label></td>
             </tr>
           </table>
-          <div class="suport f5p"><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></div>
+          <p class="suport f5p"><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></p>
           <hr>
           <div class="suport f5div">
             <a href="#" class="getback left">Повернутися назад</a>
@@ -178,15 +182,15 @@
         <h2>06. фіксована форма</h2>
         <form action="send.php">
           <fieldset>
-            <p class="suport"><input type="text" maxlength="30" name="#" id="login" ><label for="login" class="f6absol">Логін</label></p>
-            <p class="suport"><input type="email" maxlength="30" name="mail" id="password"><label for="password" class="f6absol">Пароль</label></p>
+            <p class="suport"><input type="text" maxlength="30" name="login" id="login" ><label for="login" class="f6absol">Логін</label></p>
+            <p class="suport"><input type="password" maxlength="30" name="password" id="password"><label for="password" class="f6absol">Пароль</label></p>
             <p class="drem"><a href="#">Забули пароль?</a></p>
             <p class="f6checkb"><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f6rem"><label class="style-checkbox f5stule-chec" for="f6rem">Запам’ятати пароль</label></p>
             <label class="form_5-submitlab form_6-submitlab"><input type="submit" name="submit5" class="form_5-submit form_1-submit f6sub" value="Оформити покупку"></label>
           </fieldset>
         </form>
-      </div>
-    </main>
-  </div>
-</body>
-</html>
+        </div>
+      </main>
+    </div>
+  </body>
+  </html>
