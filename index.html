@@ -55,7 +55,7 @@
                 <input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="salle"><label class="style-checkbox" for="salle">Розпродаж</label>
               </p>
               <p>
-                <input type="date"><label></label>
+                <input type="date" class="f2date" id="f2date"><label for="f2date" class="f2dateleb"></label>
               </p>
             </fieldset>
           </div>
@@ -67,7 +67,7 @@
         <form action="send.php" method="get">
           <div class="form_3-radio left">
             <p class="pmen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check men" id="menradio"><label class="style-radio" for="menradio">Чоловік</label></p>
-            <p class="pwomen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenradio"><label class="style-radio" for="womenradio">Жінка</label></p>
+            <p class="pwomen"><input type="radio" name="#" value="form_3-radio" class="f3radio-check women" id="womenrad"><label class="style-radio" for="womenrad">Жінка</label></p>
           </div>
           <div action="send.php" method="GET" class=" form_3-checkbox right">
             <p><input  type="checkbox" name="getnews" class="style-check" id="getnews"><label for="getnews">Отримувати новини</label></p>
@@ -143,9 +143,9 @@
         <form action="send.php" method="post">
           <table class="f5table_1">
             <tr>
-              <td><input type="text" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
-              <td><input type="email" id="f5email"><label for="f5email">Ел. пошта</label></td>
-              <td><input type="text" id="f5number"><label for="f5number">Телефон</label></td>
+              <td><input type="text" maxlength="30" id="f5namelasname"><label for="f5namelasname">Прізвище та ім’я</label></td>
+              <td><input type="email" maxlength="30" id="f5email"><label for="f5email">Ел. пошта</label></td>
+              <td><input type="text"  maxlength="15"id="f5number"><label for="f5number">Телефон</label></td>
             </tr>
           </table>
           <hr>
@@ -160,14 +160,14 @@
                   <span class="form_5sp-location"></span>
                   <span class="form_5s-location"></span>
                   <label for="f5cantry">Країна</label></td>
-              <td><input type="text" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
+              <td><input type="text" maxlength="30" id="f5adres" class="f5adres"><label for="f5adres">Адреса</label></td>
             </tr>
           </table>
           <table class="f5table_3">
             <tr>
-              <td><input type="text" id="f5sity"><label for="f5sity">Місто</label></td>
-              <td><input type="text" id="f5house"><label for="f5house">Будинок</label></td>
-              <td><input type="text" id="f5postind"><label for="f5postind">Поштовий індекс</label></td>
+              <td><input type="text" maxlength="30" id="f5sity"><label for="f5sity">Місто</label></td>
+              <td><input type="text" maxlength="15" id="f5house"><label for="f5house">Будинок</label></td>
+              <td><input type="text"  maxlength="15"id="f5postind"><label for="f5postind">Поштовий індекс</label></td>
             </tr>
           </table>
           <p class="suport f5p"><input type="checkbox" name="#" value="form_2-checkbox" class="checkbox-check" id="f5iagree"><label class="style-checkbox f5stule-chec" for="f5iagree">Я погоджуюсь з правилами оплати та доставки товару</label></p>
